@@ -3,23 +3,23 @@
   "%Name":"GJ01_station_sketch",
   "bboxMode":0,
   "bbox_bottom":631,
-  "bbox_left":10,
-  "bbox_right":778,
-  "bbox_top":3,
+  "bbox_left":23,
+  "bbox_right":838,
+  "bbox_top":8,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"df390cf8-ce7b-4d2f-a623-2ed8f22b8054","name":"df390cf8-ce7b-4d2f-a623-2ed8f22b8054","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2eff24e1-f763-4787-95ee-9004390fd0df","name":"2eff24e1-f763-4787-95ee-9004390fd0df","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":640,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"1a346dc7-4d49-4b06-a754-1b845dc347fb","blendMode":0,"displayName":"default","isLocked":false,"name":"1a346dc7-4d49-4b06-a754-1b845dc347fb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8333079f-9623-444a-b094-fbfc9c9e6a6e","blendMode":0,"displayName":"default","isLocked":false,"name":"8333079f-9623-444a-b094-fbfc9c9e6a6e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"GJ01_station_sketch",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"df390cf8-ce7b-4d2f-a623-2ed8f22b8054","path":"sprites/GJ01_station_sketch/GJ01_station_sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3e2a89d2-5f8a-45a0-b659-5e022edfb891","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2eff24e1-f763-4787-95ee-9004390fd0df","path":"sprites/GJ01_station_sketch/GJ01_station_sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"466df4ef-eb51-42e1-9234-55d3cd818aec","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":800,
+  "width":860,
 }

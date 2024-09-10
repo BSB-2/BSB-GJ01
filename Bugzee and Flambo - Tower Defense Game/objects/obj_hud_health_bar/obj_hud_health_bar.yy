@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"hud_health_bar",
+  "%Name":"obj_hud_health_bar",
   "eventList":[],
   "managed":true,
-  "name":"hud_health_bar",
+  "name":"obj_hud_health_bar",
   "overriddenProperties":[],
   "parent":{
     "name":"player hud",
     "path":"folders/Objects/UI/player hud.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_hud_health",
+    "path":"objects/obj_hud_health/obj_hud_health.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
