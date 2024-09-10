@@ -9,60 +9,54 @@ Key_Sprint = keyboard_check_direct(vk_lshift);
  
 key_hor = Key_Right - Key_Left;
 key_vert = Key_Down - Key_Up;
-key_speed = min(1,abs(key_hor)+abs(key_vert));
-key_dir = point_direction(0,0,key_hor,key_vert);
- 
-inputx = 0;
-inputy = 0;
+key_speed = min(1, abs(key_hor) + abs(key_vert));
+key_dir = point_direction(0, 0, key_hor, key_vert);
+
  
 //Collisions and Movement
 //Horizontal (X)
-if place_meeting(x+(sign(key_hor)*8),y,par_collision){
-    while !place_meeting(x+(sign(key_hor)*4),y,par_collision){
+if place_meeting(x + (sign(key_hor) * 8), y, par_collision){
+    while !place_meeting(x + (sign(key_hor) * 4), y, par_collision){
         x += key_hor;
     }
-    if place_meeting(x+(sign(key_hor)*8),y+16,par_collision){
-        y = y - 4;
-		inputx = 1
+    if place_meeting(x + (sign(key_hor) * 8), y + 16, par_collision){
+        y = y - player_speed_mod;
     }
-    if place_meeting(x+(sign(key_hor)*8),y-16,par_collision){
-        y = y + 4;
-		inputx = -1
+    if place_meeting(x + (sign(key_hor) * 8), y-16, par_collision){
+        y = y + player_speed_mod;
     }
 }
 else {
-    x += lengthdir_x(key_speed*playerSpeed,key_dir);
+    x += lengthdir_x(key_speed * player_speed, key_dir);
 }
  
 //Vertical (Y)
-if place_meeting(x,y+(sign(key_vert)*8),par_collision){
-    while !place_meeting(x,y+(sign(key_vert)*4),par_collision){
+if place_meeting(x, y + (sign(key_vert) * 8), par_collision){
+    while !place_meeting(x,y+(sign(key_vert) * 4), par_collision){
         y += key_vert;
     }
-    if place_meeting(x+16,y+(sign(key_vert)*8),par_collision){
-        x = x - 4;
-		inputy = 1
+    if place_meeting(x + 16, y + (sign(key_vert) * 8), par_collision){
+        x = x - player_speed_mod;
     }
-    if place_meeting(x-16,y+(sign(key_vert)*8),par_collision){
-        x = x + 4;
-		inputy = -1
+    if place_meeting(x - 16, y + (sign(key_vert) * 8), par_collision){
+        x = x + player_speed_mod;
     }
 }
 else {
-    y += lengthdir_y(key_speed*playerSpeed,key_dir);
+    y += lengthdir_y(key_speed * player_speed, key_dir);
 }
  
 if (Key_Sprint){
     sprinting = true;
-    playerSpeed = 8;
+    player_speed = player_sprint;
 }
 else{
     sprinting = false;
-    playerSpeed = 5;
+    player_speed = player_speed_mod;
 }
  
  
-image_angle = point_direction(x,y,mouse_x,mouse_y);
+image_angle = point_direction(x,y,mouse_x,mouse_y) + 180;
 
 #endregion
 #region // Shooting
