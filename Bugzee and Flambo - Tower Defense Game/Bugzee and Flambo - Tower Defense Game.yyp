@@ -40,6 +40,8 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"par_collision","path":"objects/par_collision/par_collision.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"GJ01_rough_bg","path":"sprites/GJ01_rough_bg/GJ01_rough_bg.yy",},},
+    {"id":{"name":"GJ01_station_sketch","path":"sprites/GJ01_station_sketch/GJ01_station_sketch.yy",},},
     {"id":{"name":"spr_head","path":"sprites/spr_head/spr_head.yy",},},
     {"id":{"name":"spr_tread","path":"sprites/spr_tread/spr_tread.yy",},},
   ],

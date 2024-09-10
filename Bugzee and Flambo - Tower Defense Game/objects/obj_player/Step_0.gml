@@ -1,6 +1,6 @@
 #region // Movemment
 
-///Movement
+//inputs
 Key_Left = keyboard_check_direct(ord("A"));
 Key_Right = keyboard_check_direct(ord("D"));
 Key_Up = keyboard_check_direct(ord("W"));
@@ -12,8 +12,8 @@ key_vert = Key_Down - Key_Up;
 key_speed = min(1, abs(key_hor) + abs(key_vert));
 key_dir = point_direction(0, 0, key_hor, key_vert);
 
+moving = false
 
- 
 //Collisions and Movement
 //Horizontal (X)
 if place_meeting(x + (sign(key_hor) * 8), y, par_collision){
@@ -63,6 +63,12 @@ else{
  
 image_angle = point_direction(x,y,mouse_x,mouse_y) + 180;
 
+
+if(moving) {
+	var desired_angle = point_direction(obj_player_bottom.xprevious, obj_player_bottom.yprevious, obj_player_bottom.x, obj_player_bottom.y)
+	var alpha = 0.8
+	obj_player_bottom.image_angle = alpha * obj_player_bottom.image_angle + (1 - alpha )* desired_angle
+}
 #endregion
 #region // Shooting
 
