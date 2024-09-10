@@ -22,11 +22,9 @@ if place_meeting(x + (sign(key_hor) * 8), y, par_collision){
     }
     if place_meeting(x + (sign(key_hor) * 8), y + 16, par_collision){
         y = y - player_speed_mod;
-		moving = true;
     }
     if place_meeting(x + (sign(key_hor) * 8), y-16, par_collision){
         y = y + player_speed_mod;
-		moving = true;
     }
 }
 else {
@@ -40,11 +38,9 @@ if place_meeting(x, y + (sign(key_vert) * 8), par_collision){
     }
     if place_meeting(x + 16, y + (sign(key_vert) * 8), par_collision){
         x = x - player_speed_mod;
-		moving = true;
     }
     if place_meeting(x - 16, y + (sign(key_vert) * 8), par_collision){
         x = x + player_speed_mod;
-		moving = true;
     }
 }
 else {
