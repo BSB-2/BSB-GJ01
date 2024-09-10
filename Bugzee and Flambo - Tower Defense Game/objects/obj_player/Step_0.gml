@@ -1,55 +1,75 @@
 #region // Movemment
 
-var _rotate_spd = 100;
-var _ang = point_direction(x, y, mouse_x, mouse_y);
-var _diff = angle_difference(_ang, image_angle);
-
-if keyboard_check(ord("W"))
-{
-	motion_add(90, _spd);
-	_slowdown = true;
-	speed = clamp(speed, _spd_min, _spd_max);
+///Movement
+Key_Left = keyboard_check_direct(ord("A"));
+Key_Right = keyboard_check_direct(ord("D"));
+Key_Up = keyboard_check_direct(ord("W"));
+Key_Down = keyboard_check_direct(ord("S"));
+Key_Sprint = keyboard_check_direct(vk_lshift);
+ 
+key_hor = Key_Right - Key_Left;
+key_vert = Key_Down - Key_Up;
+key_speed = min(1,abs(key_hor)+abs(key_vert));
+key_dir = point_direction(0,0,key_hor,key_vert);
+ 
+inputx = 0;
+inputy = 0;
+ 
+//Collisions and Movement
+//Horizontal (X)
+if place_meeting(x+(sign(key_hor)*8),y,par_collision){
+    while !place_meeting(x+(sign(key_hor)*4),y,par_collision){
+        x += key_hor;
+    }
+    if place_meeting(x+(sign(key_hor)*8),y+16,par_collision){
+        y = y - 4;
+		inputx = 1
+    }
+    if place_meeting(x+(sign(key_hor)*8),y-16,par_collision){
+        y = y + 4;
+		inputx = -1
+    }
 }
-
-if keyboard_check(ord("A"))
-{
-	motion_add(180, _spd);
-	_slowdown = true;
-	speed = clamp(speed, _spd_min, _spd_max);
+else {
+    x += lengthdir_x(key_speed*playerSpeed,key_dir);
 }
-
-if keyboard_check(ord("S"))
-{
-	motion_add(270, _spd);
-	_slowdown = true;
-	speed = clamp(speed, _spd_min, _spd_max);
+ 
+//Vertical (Y)
+if place_meeting(x,y+(sign(key_vert)*8),par_collision){
+    while !place_meeting(x,y+(sign(key_vert)*4),par_collision){
+        y += key_vert;
+    }
+    if place_meeting(x+16,y+(sign(key_vert)*8),par_collision){
+        x = x - 4;
+		inputy = 1
+    }
+    if place_meeting(x-16,y+(sign(key_vert)*8),par_collision){
+        x = x + 4;
+		inputy = -1
+    }
 }
-
-if keyboard_check(ord("D"))
-{
-	motion_add(0, _spd);
-	_slowdown = true;
-	speed = clamp(speed, _spd_min, _spd_max);
+else {
+    y += lengthdir_y(key_speed*playerSpeed,key_dir);
 }
-
-if (_slowdown)
-{
-	speed -= _friction;
-	if (speed <= 1)
-	{
-		_slowdown = false;
-	}
+ 
+if (Key_Sprint){
+    sprinting = true;
+    playerSpeed = 8;
 }
-
-image_angle += median(-1 * _rotate_spd, _diff, _rotate_spd); 
+else{
+    sprinting = false;
+    playerSpeed = 5;
+}
+ 
+ 
+image_angle = point_direction(x,y,mouse_x,mouse_y);
 
 #endregion
 #region // Shooting
 
 var _cd = 15;
 
-if (mouse_check_button_pressed(mb_left) && _cooldown == true)
-{
+if (mouse_check_button_pressed(mb_left) && _cooldown == true) {
 	_cooldown = false;
 	
 	instance_create_layer(x, y, "Instances", obj_bullet); // default gun
