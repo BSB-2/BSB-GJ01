@@ -8,8 +8,8 @@
   "name":"obj_turret_base",
   "overriddenProperties":[],
   "parent":{
-    "name":"anthony",
-    "path":"folders/Objects/dev/anthony.yy",
+    "name":"turret",
+    "path":"folders/Objects/dev/anthony/turret.yy",
   },
   "parentObjectId":null,
   "persistent":false,
