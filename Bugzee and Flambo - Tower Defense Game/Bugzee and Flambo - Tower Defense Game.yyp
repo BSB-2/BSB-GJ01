@@ -36,26 +36,14 @@
   },
   "name":"Bugzee and Flambo - Tower Defense Game",
   "resources":[
-    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_player_bottom","path":"objects/obj_player_bottom/obj_player_bottom.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"obj_turret_base","path":"objects/obj_turret_base/obj_turret_base.yy",},},
-    {"id":{"name":"obj_turret_head","path":"objects/obj_turret_head/obj_turret_head.yy",},},
-    {"id":{"name":"obj_turret_range","path":"objects/obj_turret_range/obj_turret_range.yy",},},
     {"id":{"name":"par_collision","path":"objects/par_collision/par_collision.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-<<<<<<< HEAD
     {"id":{"name":"GJ01_rough_bg","path":"sprites/GJ01_rough_bg/GJ01_rough_bg.yy",},},
     {"id":{"name":"GJ01_station_sketch","path":"sprites/GJ01_station_sketch/GJ01_station_sketch.yy",},},
-=======
-    {"id":{"name":"spr_enemy_temp","path":"sprites/spr_enemy_temp/spr_enemy_temp.yy",},},
->>>>>>> ef4f73eeae6703c22404507d3a59b03cec67fb91
     {"id":{"name":"spr_head","path":"sprites/spr_head/spr_head.yy",},},
-    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_tread","path":"sprites/spr_tread/spr_tread.yy",},},
-    {"id":{"name":"spr_turret_base","path":"sprites/spr_turret_base/spr_turret_base.yy",},},
-    {"id":{"name":"spr_turret_head","path":"sprites/spr_turret_head/spr_turret_head.yy",},},
-    {"id":{"name":"spr_turret_range","path":"sprites/spr_turret_range/spr_turret_range.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
