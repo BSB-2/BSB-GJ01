@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_game",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_enemy_spawn",
+  "eventList":[],
   "managed":true,
-  "name":"obj_game",
+  "name":"obj_enemy_spawn",
   "overriddenProperties":[],
   "parent":{
     "name":"game",
