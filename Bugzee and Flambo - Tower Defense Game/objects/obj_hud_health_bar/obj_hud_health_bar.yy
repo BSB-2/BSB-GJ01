@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_hud_health_bar",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_hud_health_bar",
   "overriddenProperties":[],
@@ -30,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"healthbar_empty",
+    "path":"sprites/healthbar_empty/healthbar_empty.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
