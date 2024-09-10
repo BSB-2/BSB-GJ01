@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hud_health",
+  "%Name":"obj_hud_pirate",
   "eventList":[],
   "managed":true,
-  "name":"obj_hud_health",
+  "name":"obj_hud_pirate",
   "overriddenProperties":[],
   "parent":{
-    "name":"player hud",
-    "path":"folders/Objects/UI/player hud.yy",
+    "name":"general hud",
+    "path":"folders/Objects/UI/general hud.yy",
   },
   "parentObjectId":null,
   "persistent":false,

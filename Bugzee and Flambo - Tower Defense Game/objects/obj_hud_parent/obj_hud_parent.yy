@@ -6,8 +6,8 @@
   "name":"obj_hud_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"hud",
-    "path":"folders/Objects/UI/hud.yy",
+    "name":"player hud",
+    "path":"folders/Objects/UI/player hud.yy",
   },
   "parentObjectId":null,
   "persistent":false,
