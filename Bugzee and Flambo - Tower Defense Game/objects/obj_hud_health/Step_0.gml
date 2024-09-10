@@ -1,13 +1,17 @@
-
-
-sprite = 0
-switch sprite{
-	case 0: sprite_index = hudface_good; 
+switch health_current{
+	case 2: sprite_index = hudface_good; 
 	break;
 	case 1: sprite_index = hudface_neutral; 
 	break;
-	case 2: sprite_index = hudface_bad; 
+	case 0: sprite_index = hudface_bad; 
 	break;
-	case 3: sprite_index = hudface_dead; 
+	case -1: sprite_index = hudface_dead; 
 	break;
+}
+
+for(var itI = 0; itI <= health_max; itI += 1) {
+	offset = itI * 65;
+	itID = itI
+	var _healthbar
+	_healthbar = instance_create_layer(x + offset, y, "hud", obj_hud_health_bar)
 }

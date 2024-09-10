@@ -78,6 +78,8 @@
     {"id":{"name":"turret","path":"rooms/turret/turret.yy",},},
     {"id":{"name":"GJ01_rough_bg","path":"sprites/GJ01_rough_bg/GJ01_rough_bg.yy",},},
     {"id":{"name":"GJ01_station_sketch","path":"sprites/GJ01_station_sketch/GJ01_station_sketch.yy",},},
+    {"id":{"name":"healthbar_empty","path":"sprites/healthbar_empty/healthbar_empty.yy",},},
+    {"id":{"name":"healthbar","path":"sprites/healthbar/healthbar.yy",},},
     {"id":{"name":"hudface_bad","path":"sprites/hudface_bad/hudface_bad.yy",},},
     {"id":{"name":"hudface_dead","path":"sprites/hudface_dead/hudface_dead.yy",},},
     {"id":{"name":"hudface_good","path":"sprites/hudface_good/hudface_good.yy",},},
