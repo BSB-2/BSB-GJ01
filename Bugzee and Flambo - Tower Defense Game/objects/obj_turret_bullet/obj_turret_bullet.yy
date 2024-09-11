@@ -13,7 +13,10 @@
     "name":"turret",
     "path":"folders/Objects/dev/anthony/turret.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_bullet",
+    "path":"objects/obj_bullet/obj_bullet.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
