@@ -52,6 +52,7 @@ else {
 if (Key_Sprint){
     sprinting = true;
     player_speed = player_sprint;
+	moving = true
 }
 else{
     sprinting = false;
