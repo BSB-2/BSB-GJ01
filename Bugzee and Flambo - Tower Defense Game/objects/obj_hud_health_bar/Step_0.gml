@@ -4,4 +4,6 @@ if(uID <= obj_hud_health.health_current) {
 }
 else {
 	sprite_index = healthbar_empty
-}
+ }
+
+instance_destroy()
