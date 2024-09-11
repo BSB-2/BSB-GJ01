@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Bugzee and Flambo - Tower Defense Game",
-    "path":"Bugzee and Flambo - Tower Defense Game.yyp",
+    "name":"turret",
+    "path":"folders/Sprites/dev/anthony/turret.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
