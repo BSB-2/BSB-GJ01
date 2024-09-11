@@ -10,7 +10,7 @@ switch health_current{
 }
 
 for(var itI = 0; itI <= health_max; itI += 1) {
-	offset = itI * 65;
+	offset = itI * 80;
 	itID = itI
 	var _healthbar
 	_healthbar = instance_create_layer(x + offset, y, "hud", obj_hud_health_bar)
