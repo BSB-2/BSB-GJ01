@@ -1,2 +1,2 @@
-image_yscale = scale
-image_xscale = scale
+xp = 0
+yp = 0

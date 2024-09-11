@@ -13,7 +13,7 @@ key_speed = min(1, abs(key_hor) + abs(key_vert));
 key_dir = point_direction(0, 0, key_hor, key_vert);
 
 
- 
+
 //Collisions and Movement
 //Horizontal (X)
 if place_meeting(x + (sign(key_hor) * 8), y, par_collision){
@@ -21,12 +21,12 @@ if place_meeting(x + (sign(key_hor) * 8), y, par_collision){
         x += key_hor;
     }
     if place_meeting(x + (sign(key_hor) * 8), y + 16, par_collision){
-        y = y - player_speed_mod;
-		moving = true;
+        y = y - player_speed_mod
+		obj_player_bottom.moving = true
     }
     if place_meeting(x + (sign(key_hor) * 8), y-16, par_collision){
-        y = y + player_speed_mod;
-		moving = true;
+        y = y + player_speed_mod
+		obj_player_bottom.moving = true
     }
 }
 else {
@@ -39,12 +39,12 @@ if place_meeting(x, y + (sign(key_vert) * 8), par_collision){
         y += key_vert;
     }
     if place_meeting(x + 16, y + (sign(key_vert) * 8), par_collision){
-        x = x - player_speed_mod;
-		moving = true;
+        x = x - player_speed_mod
+		obj_player_bottom.moving = true
     }
     if place_meeting(x - 16, y + (sign(key_vert) * 8), par_collision){
-        x = x + player_speed_mod;
-		moving = true;
+        x = x + player_speed_mod
+		obj_player_bottom.moving =true
     }
 }
 else {
@@ -54,6 +54,7 @@ else {
 if (Key_Sprint){
     sprinting = true;
     player_speed = player_sprint;
+	moving = true
 }
 else{
     sprinting = false;

@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player_bottom",
+  "%Name":"obj_hud_health_bar",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player_bottom",
+  "name":"obj_hud_health_bar",
   "overriddenProperties":[],
   "parent":{
-    "name":"player",
-    "path":"folders/Objects/player.yy",
+    "name":"player hud",
+    "path":"folders/Objects/UI/player hud.yy",
   },
   "parentObjectId":{
-    "name":"obj_player",
-    "path":"objects/obj_player/obj_player.yy",
+    "name":"obj_hud_health",
+    "path":"objects/obj_hud_health/obj_hud_health.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -29,16 +29,11 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"moving","filters":[],"listItems":[],"multiselect":false,"name":"moving","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_tread",
-    "path":"sprites/spr_tread/spr_tread.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
