@@ -12,6 +12,8 @@ key_vert = Key_Down - Key_Up;
 key_speed = min(1, abs(key_hor) + abs(key_vert));
 key_dir = point_direction(0, 0, key_hor, key_vert);
 
+
+
 //Collisions and Movement
 //Horizontal (X)
 if place_meeting(x + (sign(key_hor) * 8), y, par_collision){
