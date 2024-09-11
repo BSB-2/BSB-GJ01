@@ -5,8 +5,10 @@ function fire(pos_x, pos_y) {
 	
 	if _cooldown {
 		new_bullet = instance_create_layer(x, y, "Instances", obj_turret_bullet)
+		new_bullet._turret_origin_id = id
 		new_bullet.target_x = pos_x
 		new_bullet.target_y = pos_y
+		new_bullet.alarm[0] = 1
 		_cooldown = false
 		alarm[0] = _cd; // after _cd frames, _cooldown set to True
 	}
