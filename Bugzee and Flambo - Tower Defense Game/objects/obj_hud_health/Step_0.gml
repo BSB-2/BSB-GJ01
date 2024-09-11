@@ -13,5 +13,7 @@ for(var itI = 0; itI <= health_max; itI += 1) {
 	offset = itI * 80;
 	itID = itI
 	var _healthbar
+	var _healthbar_bg
 	_healthbar = instance_create_layer(x + offset, y, "hud", obj_hud_health_bar)
+	_healthbar_bg = instance_create_layer(x + offset, y, "bg_hud", obj_hud_healthbar_bg)
 }

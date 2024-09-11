@@ -1,21 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hud_health_bar",
+  "%Name":"obj_hud_healthbar_bg",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_hud_health_bar",
+  "name":"obj_hud_healthbar_bg",
   "overriddenProperties":[],
   "parent":{
     "name":"player hud",
     "path":"folders/Objects/UI/player hud.yy",
   },
-  "parentObjectId":{
-    "name":"obj_hud_health",
-    "path":"objects/obj_hud_health/obj_hud_health.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

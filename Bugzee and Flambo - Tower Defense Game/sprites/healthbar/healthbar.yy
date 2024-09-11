@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":51,
   "bbox_left":0,
-  "bbox_right":255,
+  "bbox_right":129,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"94c98da1-1b34-433b-92e1-0c6eabe3d1e0","name":"94c98da1-1b34-433b-92e1-0c6eabe3d1e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"ec158841-aa70-44c0-aadf-74384b26c9a6","name":"ec158841-aa70-44c0-aadf-74384b26c9a6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":52,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"baecd554-dbc5-4c2f-a2f6-aa1fc9773ccf","blendMode":0,"displayName":"default","isLocked":false,"name":"baecd554-dbc5-4c2f-a2f6-aa1fc9773ccf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"11fb02f7-ba71-4ac4-aad8-ebdcd708efd2","blendMode":0,"displayName":"default","isLocked":false,"name":"11fb02f7-ba71-4ac4-aad8-ebdcd708efd2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"healthbar",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"healthbar",
-    "path":"folders/Sprites/ui/hud/healthbar.yy",
+    "name":"Bugzee and Flambo - Tower Defense Game",
+    "path":"Bugzee and Flambo - Tower Defense Game.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"94c98da1-1b34-433b-92e1-0c6eabe3d1e0","path":"sprites/healthbar/healthbar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6658a0fa-510a-45a6-b43c-a56fd4da0291","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ec158841-aa70-44c0-aadf-74384b26c9a6","path":"sprites/healthbar/healthbar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"24fbd67b-7c13-44e6-8625-74c9cf26ca7f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":256,
+  "width":130,
 }
