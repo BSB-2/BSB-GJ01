@@ -6,8 +6,8 @@
   "name":"obj_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bugzee and Flambo - Tower Defense Game",
-    "path":"Bugzee and Flambo - Tower Defense Game.yyp",
+    "name":"turret",
+    "path":"folders/Objects/dev/anthony/turret.yy",
   },
   "parentObjectId":null,
   "persistent":false,
