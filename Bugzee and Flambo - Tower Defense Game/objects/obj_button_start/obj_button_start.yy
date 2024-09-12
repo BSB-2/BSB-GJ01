@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_button_settings",
-  "eventList":[],
+  "%Name":"obj_button_start",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_button_settings",
+  "name":"obj_button_start",
   "overriddenProperties":[],
   "parent":{
     "name":"main menu",
     "path":"folders/Objects/UI/main menu.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_button_parent",
+    "path":"objects/obj_button_parent/obj_button_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_mainmenu_start",
+    "path":"sprites/spr_mainmenu_start/spr_mainmenu_start.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

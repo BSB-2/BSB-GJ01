@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_button_quit",
+  "%Name":"fadeout_splashscreen",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_button_quit",
+  "name":"fadeout_splashscreen",
   "overriddenProperties":[],
   "parent":{
-    "name":"main menu",
-    "path":"folders/Objects/UI/main menu.yy",
+    "name":"fade",
+    "path":"folders/Objects/fade.yy",
   },
   "parentObjectId":{
-    "name":"obj_button_parent",
-    "path":"objects/obj_button_parent/obj_button_parent.yy",
+    "name":"fadeout_baseclass",
+    "path":"objects/fadeout_baseclass/fadeout_baseclass.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_mainmenu_quit",
-    "path":"sprites/spr_mainmenu_quit/spr_mainmenu_quit.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
